@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* ----------- Header ---------- */
+header {
+  height: 180px;
+  background-color: #ffcf00;
+}
+
+header > section {
+  max-width: 912px;
+  min-width: 762px;
+  margin-inline: auto;
+}
+
+header > section > * {
+  display: inline-block;
+  vertical-align:middle;
+}
+
+header > section > figure > img {
+  margin-top: -50px;
+  width: 200px;
+}
+
+header > section > nav {
+  margin-left: 22%;
+}
+
+header > section > nav > ul > a {
+  text-decoration: none;
+  display: inline-block;
+  margin-inline: 10px;
+  font-weight: 900;
+  color:inherit;
+  font-size: 1.25em;
+  text-transform: uppercase;
+}
+
+/* ---------- main ---------- */
+#card {
+  margin: 50px 0;
+}
+
+#card form {
+  margin-inline: auto;
+  max-width: 550px;
+  min-width: 300px;
+  padding: 25px;
+  border-radius: 40px;
+  background-color: #f3b437;
+}
+
+#card form > *:not(:last-child):not(:nth-last-child(2)) {
+  margin-bottom: 22px;
+}
+
+#card form >:last-child {
+  text-align: end;
+}
+
+#card section label {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.15em;
+  user-select: none;
+}
+
+#card section label:not(:first-child)::before {
+  content: "\a";
+  white-space: pre;
+}
+
+#card section [type="text"] {
+  box-sizing: border-box;
+  height: 36px;
+  border-radius: 0.25em;
+  margin: 0.2em 0;
+  padding: 0.5em;
+  min-width: 20em;
+  color: #120f02;
+  font-size: 1em;
+  font-weight: 500;
+  border: solid #cf8d0b 1px;
+  background-color: #f3c15d;
+}
+
+#card section [type="text"]:focus {
+  border: solid #f0940a 1px;
+  outline: solid #f0940a 1px;
+  background-color: #f2c65f;
+}
+
+#card fieldset {
+  border: none;
+}
+
+#card fieldset legend {
+  font-size: 1.05em;
+  font-weight: 600;
+}
+
+#card fieldset label {
+  line-height: 2.3em;
+  font-size: .85em;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* —— inputs section —— */
+#card fieldset input + label {
+  margin-left: 1.25em;
+}
+
+#card [type="radio"],
+#card [type="checkbox"] {
+  display: inline-block;
+  appearance: none;
+  margin: 0;
+  cursor: pointer;
+  width: 0.9em;
+  height: 0.9em;
+  transform: translate(0.1em, 0.13em);
+  transition: 250ms;
+  background-color: #fff;
+  outline: 0.05em solid #cf8d0b;
+}
+
+#card [type="radio"] {
+  border-radius: 50%;
+}
+
+#card [type="radio"]:hover,
+#card [type="checkbox"]:hover{
+  background-color: #f6d5ba;
+}
+
+#card [type="radio"]:active,
+#card [type="checkbox"]:active {
+  background-color: #deaf86;
+}
+
+#card [type="checkbox"]:checked {
+  outline-color: #58bf8d;
+  background-color: #58bf8d;
+  transition: 600ms;
+}
+
+#card [type="radio"]:checked {
+  outline-color: #0F258A;
+  border-color: #0F258A;
+  background-color: #0F258A;
+  transition: 750ms;
+}
+
+#card [type="checkbox"]:checked::after {
+  display: inline-block;
+  content: "";
+  background-color: #fff;
+  width: 0.55em;
+  height: 0.55em;
+  transform: translate(0.15em, -0.15em);
+  transition: 250ms;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+#card [type="submit"] {
+  padding: 0.75em 1.5em;
+  margin-right: 5%;
+  border: none;
+  border-radius: 1.25em;
+  color: white;
+  transition: 350ms;
+  background-color: #0f2589;
+}
+
+#card [type="submit"]:hover {
+  cursor: pointer;
+  background-color: #23478e;
+}
+
+/* lorem cards */
+#radom-lorens {
+  text-align: center;
+}
+
+#radom-lorens article:first-child {
+  text-align: right;
+}
+
+#radom-lorens article {
+  width: 340px;
+  padding: 15px;
+  margin: 0.25em;
+  font-size: 0.75em;
+  background-color: #f3b437;
+  display: inline-block;
+  border: 2px solid #ffcf00;
+  line-height: 1.4em;
+}
+
+/* ---------- footer ---------- */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  background-color: #ffcf00;
+}
+
+footer > section {
+  display: inline-block;
+  vertical-align:middle;
+  margin-inline: 18px;
+}
+
+footer > section > figure > img {
+  height: 130px;
+  width: 120px;
+  object-fit: cover;
+}
+
+footer > section > h2 {
+  font-size: 1.12em;
+}
+
+footer > section ul a{
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  font-size: 1.25em;
+}
+
+footer > section ul li{
+  padding: 0.25em 0;
+}
+
+/* seccao creditos */
+footer > section:last-child h2 {
+  margin-bottom: 0.25em;
+}
+
+footer > section:last-child ul {
+  width: 305px;
+  text-align: initial;
+  padding-left: 38px;
+}
+
+footer > section:last-child ul > li {
+  width: 150px;
+  display: inline-block;
+  padding: 0.12em 0;
+}
+
+footer > section:last-child ul > li:nth-child(even)::before {
+ content: "-  ";
+ white-space: pre;
+}
+
